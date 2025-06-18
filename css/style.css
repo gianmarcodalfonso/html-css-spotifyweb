@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* layout  */
 .container {
   width: x;
@@ -13,6 +17,10 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* flex */
@@ -44,7 +52,44 @@ main {
   width: 250px;
   height: 100%;
   background-color: greenyellow;
+  color: grey;
+  padding: 0px 20px;
 }
+
+.content-selection li {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+
+.content-selection i {
+  margin-right: 5px;
+}
+
+.content-selection li i {
+  font-size: 1.5rem;
+}
+
+.new-playlist i {
+  font-size: 2.5rem;
+}
+
+#sidebar h3 {
+  margin: 10px 0;
+}
+
+.playlist li {
+  margin: 15px 0;
+}
+
+.content-selected {
+  display: inline;
+  border: 1px solid red;
+  height: 100%;
+  position: absolute;
+  left: -20px;
+}
+
 
 /** content */
 #content {
