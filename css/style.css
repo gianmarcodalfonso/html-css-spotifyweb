@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+/* layout  */
+.container {
+  width: x;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-fix {
+  height: 80px;
+  width: 100%;
+}
+
 /* flex */
 
 /* header */
@@ -25,6 +41,7 @@
 /* main */
 main {
   height: calc(100vh - 80px);
+  display: flex;
 }
 
 /** sidebar */
@@ -35,9 +52,22 @@ main {
 }
 
 /** content */
+#content {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  overflow-y: auto;
+}
 
 /* footer */
 footer {
   background-color: grey;
   height: 80px;
+}
+
+/* classes */
+.cta {
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-radius: 25px;
 }
