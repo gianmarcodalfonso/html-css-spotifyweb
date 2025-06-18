@@ -54,6 +54,9 @@ main {
   background-color: greenyellow;
   color: grey;
   padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content-selection li {
