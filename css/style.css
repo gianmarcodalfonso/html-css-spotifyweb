@@ -5,11 +5,27 @@
 }
 
 /* header */
+header {
+  background-color: black;
+  height: 80px;
+}
 
 /* main */
+main {
+  height: calc(100vh - 160px);
+}
 
 /** sidebar */
+#sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: greenyellow;
+}
 
 /** content */
 
 /* footer */
+footer {
+  background-color: grey;
+  height: 80px;
+}
