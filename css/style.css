@@ -4,20 +4,32 @@
   box-sizing: border-box;
 }
 
+/* flex */
+
 /* header */
-header {
-  background-color: black;
+#header {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo img {
+  height: 100%;
 }
 
 /* main */
 main {
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
 }
 
 /** sidebar */
 #sidebar {
-  width: 200px;
+  width: 250px;
   height: 100%;
   background-color: greenyellow;
 }
