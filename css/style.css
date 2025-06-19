@@ -192,6 +192,20 @@ footer {
   height: 50px;
 }
 
+/** player  */
+.player {
+  align-content: center;
+}
+
+.song-progress {
+  display: flex;
+  align-items: center;
+}
+
+.song-progress>* {
+  margin: 10px;
+}
+
 /** player panel  */
 .player-panel {
   display: flex;
