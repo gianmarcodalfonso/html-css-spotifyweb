@@ -162,11 +162,27 @@ main {
 
 /* footer */
 footer {
-  background-color: grey;
+  background-color: #282828;
   height: 80px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
+.progress-bar {
+  height: 3px;
+  width: 100px;
+  background-color: #585858;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 25%;
+  background-color: #BBBBBB;
+}
+
+/** player info  */
 .player-info {
   padding: 15px 8px;
   display: flex;
@@ -175,6 +191,17 @@ footer {
 .player-info img {
   height: 50px;
 }
+
+/** player panel  */
+.player-panel {
+  display: flex;
+  align-items: center;
+}
+
+.player-panel * {
+  margin-right: 15px;
+}
+
 
 /* classes */
 .cta {
