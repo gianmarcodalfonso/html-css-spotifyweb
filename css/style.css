@@ -107,6 +107,20 @@ main {
   overflow-y: auto;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+#content .menu ul {
+  display: flex;
+}
+
+#content .menu li {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 /* footer */
 footer {
   background-color: grey;
