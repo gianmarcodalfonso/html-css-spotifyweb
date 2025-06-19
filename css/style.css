@@ -164,6 +164,16 @@ main {
 footer {
   background-color: grey;
   height: 80px;
+  display: flex;
+}
+
+.player-info {
+  padding: 15px 8px;
+  display: flex;
+}
+
+.player-info img {
+  height: 50px;
 }
 
 /* classes */
