@@ -10,7 +10,7 @@ body {
 
 /* layout  */
 .container {
-  width: x;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -21,6 +21,15 @@ body {
 
 li {
   list-style-type: none;
+}
+
+/* col */
+.col-100 {
+  width: 100%;
+}
+
+.col-18 {
+  width: calc(100% / 6);
 }
 
 /* flex */
@@ -119,6 +128,14 @@ main {
 #content .menu li {
   padding: 10px;
   text-transform: uppercase;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
 }
 
 /* footer */
