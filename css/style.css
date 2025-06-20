@@ -197,7 +197,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #fff;
 }
 
 .progress-bar {
@@ -226,6 +226,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 350px;
+  color: #656565;
 }
 
 .player-info .info {
@@ -241,6 +242,10 @@ footer {
   display: block;
   margin: 5px;
   font-size: 1.2em;
+}
+
+.player-info h6 {
+  color: #fff;
 }
 
 /** player  */
@@ -293,6 +298,11 @@ footer {
 }
 
 span:hover,
-li:hover {
+li:hover,
+i:hover {
   color: #fff;
+}
+
+.player-info span:hover {
+  text-decoration: underline;
 }
