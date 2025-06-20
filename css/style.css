@@ -291,3 +291,8 @@ footer {
   opacity: 1;
   transition: 0.3s;
 }
+
+span:hover,
+li:hover {
+  color: #fff;
+}
