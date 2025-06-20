@@ -41,9 +41,15 @@ li {
   display: flex;
 }
 
+.align-w-flex {
+  display: flex;
+  align-items: center;
+}
+
 /* header */
 #header {
   background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   height: 80px;
   position: fixed;
   top: 0;
@@ -81,8 +87,7 @@ main {
   position: relative;
 }
 
-
-.content-selection i {
+#sidebar i {
   margin-right: 5px;
 }
 
@@ -114,6 +119,8 @@ main {
   padding: 5px 0;
 }
 
+.profile i {}
+
 
 /** content */
 #content {
@@ -142,8 +149,28 @@ main {
   text-align: center;
 }
 
+.card-img {
+  width: 100%;
+  position: relative;
+}
+
 .card img {
   width: 100%;
+}
+
+.card .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0;
 }
 
 .rounded {
@@ -249,12 +276,18 @@ footer {
 
 /* classes */
 .cta {
-  border: 1px solid black;
-  padding: 10px 40px;
+  border: 1px solid white;
+  padding: 7px 40px;
   border-radius: 25px;
 }
 
 .header-fix {
   height: 80px;
   width: 100%;
+}
+
+/* hover */
+.overlay:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
