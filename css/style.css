@@ -37,6 +37,9 @@ li {
 }
 
 /* flex */
+.display-flex {
+  display: flex;
+}
 
 /* header */
 #header {
@@ -64,7 +67,7 @@ main {
 #sidebar {
   width: 250px;
   height: 100%;
-  background-color: greenyellow;
+  background-color: #000000;
   color: grey;
   padding: 0px 20px;
   display: flex;
@@ -99,7 +102,7 @@ main {
   margin: 15px 0;
 }
 
-.content-selected {
+#sidebar .content-selected {
   display: inline;
   border: 1px solid red;
   height: 100%;
@@ -116,7 +119,7 @@ main {
 #content {
   width: calc(100vw - 250px);
   height: 100%;
-  background-color: orange;
+  background-color: #141922;
   overflow-y: auto;
   color: grey;
 }
@@ -172,8 +175,15 @@ footer {
 
 .progress-bar {
   height: 3px;
-  width: 100px;
   background-color: #585858;
+}
+
+.progress-bar.big {
+  width: 350px;
+}
+
+.progress-bar.small {
+  width: 100px;
 }
 
 .progress-bar .progress {
@@ -186,15 +196,33 @@ footer {
 .player-info {
   padding: 15px 8px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.player-info .info {
+  align-content: center;
 }
 
 .player-info img {
   height: 50px;
+  margin-right: 5px;
+}
+
+.player-info .folders>* {
+  display: block;
+  margin: 5px;
+  font-size: 1.2em;
 }
 
 /** player  */
 .player {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .song-progress {
@@ -202,14 +230,16 @@ footer {
   align-items: center;
 }
 
-.song-progress>* {
-  margin: 10px;
+.song-progress>*,
+.player-input>* {
+  margin: 5px 10px;
 }
 
 /** player panel  */
 .player-panel {
   display: flex;
   align-items: center;
+  width: 200px;
 }
 
 .player-panel * {
