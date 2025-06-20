@@ -101,6 +101,8 @@ main {
 
 #sidebar h3 {
   margin: 10px 0;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .playlist li {
@@ -116,10 +118,21 @@ main {
 }
 
 #sidebar .bottom>* {
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
-.profile i {}
+#sidebar .bottom i {
+  margin-right: 10px;
+}
+
+.profile {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.profile i {
+  font-size: 2em;
+}
 
 
 /** content */
@@ -299,7 +312,9 @@ footer {
 
 span:hover,
 li:hover,
-i:hover {
+i:hover,
+.new-playlist:hover,
+.install-app:hover {
   color: #fff;
 }
 
