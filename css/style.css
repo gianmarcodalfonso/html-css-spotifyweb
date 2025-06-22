@@ -238,7 +238,7 @@ footer {
 }
 
 .progress-bar.big {
-  width: 350px;
+  width: 50%;
 }
 
 .progress-bar.small {
@@ -305,6 +305,8 @@ footer {
 .song-progress {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .song-progress>*,
@@ -346,7 +348,7 @@ footer {
 }
 
 .header-fix {
-  height: 100px;
+  height: 105px;
   width: 100%;
 }
 
