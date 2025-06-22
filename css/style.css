@@ -51,13 +51,14 @@ li {
 #header {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  height: 80px;
+  height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
+  z-index: 1;
 }
 
 .logo img {
@@ -66,7 +67,7 @@ li {
 
 /* main */
 main {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   display: flex;
 }
 
@@ -116,7 +117,7 @@ main {
 
 #sidebar .content-selected {
   display: inline;
-  border: 1px solid red;
+  border: 1px solid greenyellow;
   height: 100%;
   position: absolute;
   left: -20px;
@@ -161,6 +162,15 @@ main {
 #content .menu li {
   padding: 20px 10px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content .menu .content-selected {
+  display: block;
+  border: 1px solid greenyellow;
+  width: 30%;
 }
 
 .card {
@@ -215,7 +225,7 @@ main {
 /* footer */
 footer {
   background-color: #282828;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -336,7 +346,7 @@ footer {
 }
 
 .header-fix {
-  height: 80px;
+  height: 100px;
   width: 100%;
 }
 
@@ -379,4 +389,8 @@ i:hover,
   .progress-dot {
     display: block;
   }
+}
+
+#header .cta:hover {
+  transform: scale(110%);
 }
