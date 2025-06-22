@@ -302,6 +302,20 @@ footer {
   margin: 5px 10px;
 }
 
+.progress-dot {
+  top: -4px;
+  right: 0;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+.progress-bar.small .progress-dot {
+  right: -20px;
+}
+
 /** player panel  */
 .player-panel {
   display: flex;
@@ -352,10 +366,17 @@ i:hover,
   text-decoration: underline;
 }
 
-.play-btn:hover {
-  opacity: 0;
-}
-
 .play-btn-big:hover {
   opacity: 1;
+  background-color: #282828;
+}
+
+.progress-bar:hover {
+  .progress {
+    background-color: greenyellow;
+  }
+
+  .progress-dot {
+    display: block;
+  }
 }
